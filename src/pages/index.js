@@ -1,31 +1,24 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import {
-  banner,
-  image,
-  main,
-  big,
-  box,
-  boxes,
-  firstBox,
-  secondBox,
-  thirdBox,
-  boxOverlay,
-  footer,
-} from '../components/layout.module.css'
+import Box from '../components/box'
+import Card from '../components/card'
+import '../css/main.css'
 
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
-      <div className={banner}>
-        <div className={image}>
+      <div className="banner">
+        <div className="image">
         </div>
       </div>
-
-      <div className={main}>
+      <Box bgColor="darkBg">
+        <h1>Hello there</h1>
+        <p>This is my box layout.</p>
+      </Box>
+      <div className="main">
         <div>
-          <h2 className={big}>Kladomox Plus <br /> Kelebija Subotica</h2>
+          <h2 className="big">Kladomox Plus <br /> Kelebija Subotica</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut laudantium in incidunt, qui error repellat fugit quidem officia? Illo ullam mollitia voluptate quam quibusdam. Suscipit nihil dolore quaerat. Temporibus.<br /><br />
             Quos iusto amet cum in ea expedita saepe autem quidem. Harum, fuga! Neque voluptatem fugit soluta deserunt repudiandae sunt dolore, eligendi culpa tempore. Quod voluptates perferendis voluptate debitis non facilis.<br /><br />
             Quae quos nisi laborum cumque autem voluptatum, quibusdam magnam fugiat libero optio, iste exercitationem minus ipsa veritatis sunt porro, praesentium blanditiis recusandae fuga iure temporibus. Nesciunt ullam sed distinctio cum.</p>
@@ -36,37 +29,16 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className={box}>
-        <h2 className={big}>Pruzamo Vam</h2>
-        <div className={boxes}>
-          <div className={firstBox}>
-            <div className={boxOverlay}>
-              <div>
-                <h3>Udobnost</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-          <div className={secondBox}>
-            <div className={boxOverlay}>
-              <div>
-                <h3>Mir i tisinu</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
-          <div className={thirdBox}>
-            <div className={boxOverlay}>
-              <div>
-                <h3>Prirodu</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-              </div>
-            </div>
-          </div>
+      <div className="box">
+        <h2 className="big">Pruzamo Vam</h2>
+        <div className="boxes">
+          <Card boxNumber="first-box" />
+          <Card boxNumber="second-box" />
+          <Card boxNumber="third-box" />
         </div>
       </div>
 
-      <div className={footer}>
+      <div className="footer">
         <div>
           <h2>Zakazite razgovor sa nama</h2>
           <input type="text" placeholder="Ime" name="name" id="name" />
