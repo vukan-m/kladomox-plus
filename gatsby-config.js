@@ -3,5 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Kladomox Plus",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+  ],
 };

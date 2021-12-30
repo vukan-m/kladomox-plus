@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Box from '../components/box'
 import Card from '../components/card'
+import Form from '../components/form'
 import '../css/main.css'
 
 
@@ -12,45 +13,37 @@ const IndexPage = () => {
         <div className="image">
         </div>
       </div>
-      <Box bgColor="darkBg">
-        <h1>Hello there</h1>
-        <p>This is my box layout.</p>
+      <Box bgColor="lightBg">
+        <div className="main">
+          <div>
+            <h2>Kladomox Plus <br /> Kelebija Subotica</h2>
+            <p><strong>Kladomox Plus</strong> dom za stare je specijalizovan dom za smeštaj i negu odraslih i starijih lica. Nalazi se u mirnom naselju Kelebija na 10 min vožnje od centra Grada Subotica. Dom je okružen zelenilom i livadama i u blizini je Kelebijske šume.<br /><br />
+            U domu <strong>Kladomox Plus</strong> sve je osmišljeno u cilju pružanja visoko kvalitetnih usluga kako bi se naši korisnici osećali sigurno, komforno i zbrinjeno, počev od nege, higijene i ishrane pa do medicinskih usluga, terapije i društvenog života. Za rekreaciju i organizovane izlete korisnici doma mogu da koriste usluge vožnje u fijaker po prelepoj prirodi i Kelebijskoj šumi koja se nalazi u neposrednoj blizini doma.  </p>
+          </div>
+
+          <div>
+            <img src="../images/black-white.jpg" alt="Black and White" />
+          </div>
+        </div>
       </Box>
-      <div className="main">
-        <div>
-          <h2 className="big">Kladomox Plus <br /> Kelebija Subotica</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut laudantium in incidunt, qui error repellat fugit quidem officia? Illo ullam mollitia voluptate quam quibusdam. Suscipit nihil dolore quaerat. Temporibus.<br /><br />
-            Quos iusto amet cum in ea expedita saepe autem quidem. Harum, fuga! Neque voluptatem fugit soluta deserunt repudiandae sunt dolore, eligendi culpa tempore. Quod voluptates perferendis voluptate debitis non facilis.<br /><br />
-            Quae quos nisi laborum cumque autem voluptatum, quibusdam magnam fugiat libero optio, iste exercitationem minus ipsa veritatis sunt porro, praesentium blanditiis recusandae fuga iure temporibus. Nesciunt ullam sed distinctio cum.</p>
+      <Box bgColor="darkBg">
+        <div className="box">
+          <h2 className="big padding">Pružamo Vam</h2>
+          <div className="boxes">
+            <Card boxNumber="first-box" />
+            <Card boxNumber="second-box" />
+            <Card boxNumber="third-box" />
+          </div>
         </div>
-
-        <div>
-          <img src="../images/black-white.jpg" alt="Black and White" />
+      </Box>
+      <Box bgColor="lightBg">
+        <div className="footer">
+          <Form />
+          <div>
+            <img src="../images/footer.jpg" alt="Footer" />
+          </div>
         </div>
-      </div>
-
-      <div className="box">
-        <h2 className="big">Pruzamo Vam</h2>
-        <div className="boxes">
-          <Card boxNumber="first-box" />
-          <Card boxNumber="second-box" />
-          <Card boxNumber="third-box" />
-        </div>
-      </div>
-
-      <div className="footer">
-        <div>
-          <h2>Zakazite razgovor sa nama</h2>
-          <input type="text" placeholder="Ime" name="name" id="name" />
-          <input type="mail" placeholder="E-mail" name="mail" id="mail" />
-          <input type="text" placeholder="Broj telefona" name="number" id="number" />
-          <textarea name="message" id="message" cols="30" rows="5" placeholder="Poruka"></textarea>
-          <input type="submit" />
-        </div>
-        <div>
-          <img src="../images/footer.jpg" alt="Footer" />
-        </div>
-      </div>
+      </Box>
     </Layout>
   )
 }
