@@ -4,6 +4,7 @@ module.exports = {
     title: "Kladomox Plus",
   },
   plugins: [
-    "gatsby-plugin-image",
+    // "gatsby-plugin-image",
+    // "gatsby-plugin-sharp",
   ],
 };

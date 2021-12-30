@@ -8,7 +8,7 @@ import '../css/main.css'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="Početna strana">
       <div className="banner">
         <div className="image">
         </div>

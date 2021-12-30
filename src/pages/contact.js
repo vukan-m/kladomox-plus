@@ -8,12 +8,14 @@ import Info from '../components/info'
 
 const ContactPage = () => {
   return (
-    <Layout pageTitle="Contact">
+    <Layout pageTitle="Kontakt">
       <Box bgColor="lightBg">
+        <h2 className="padding">Kontakt</h2>
         <div class="contact">
           <Info />
           <Hours />
         </div>
+        {/* Google Mapa */}
       </Box>
     </Layout>
   )

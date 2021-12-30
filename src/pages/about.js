@@ -2,12 +2,11 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Box from '../components/box'
 import '../css/main.css'
-import { StaticImage } from 'gatsby-plugin-image'
 
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About">
+    <Layout pageTitle="O Nama">
       <Box bgColor="lightBg">
         <h2 className="padding">O Nama</h2>
         <p className="about">
@@ -18,7 +17,6 @@ const AboutPage = () => {
           Tu smo da pružimo toplinu, brigu i negu kao kod kuće, a sve u lepo uređenom ambijentu uz prijatno društvo i na pravi način.<br /><br />
           <strong>Dobro došli u <em>Kladomox Plus</em> ustanovu za smeštaj starih lica.</strong>
         </p>
-        <StaticImage src="../images/comfort.jpg" alt="Comfort" />
       </Box>
     </Layout>
   )
