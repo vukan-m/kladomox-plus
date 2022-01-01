@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 1600px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .container {
     margin: 5rem;
     font-family: sans-serif;
@@ -67,6 +74,10 @@
     padding: 2rem 0;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 h2 {
     color: #420C14;
     text-align: center;
@@ -106,20 +117,20 @@ p {
 
 .image:before {
     content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        opacity: .2; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .2;
 }
 
 .main {
     height: 540px;
     display: flex;
     padding: 4rem 8rem;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .main div {
@@ -214,7 +225,8 @@ p {
     text-align: center;
 }
 
-.footer input, .footer textarea {
+.footer input,
+.footer textarea {
     display: block;
     margin: 0.8rem auto;
     width: 260px;
@@ -229,7 +241,7 @@ p {
 }
 
 .contact h4 {
-    color:#420C14;
+    color: #420C14;
     font-variant: small-caps;
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -242,5 +254,17 @@ p {
 .about {
     max-width: 70%;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.about:last-of-type {
+    padding-bottom: 3rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.emphasis {
+    font-style: italic;
 }
