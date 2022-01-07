@@ -4,6 +4,7 @@ import Box from '../components/box'
 import '../css/main.css'
 import Hours from '../components/hours'
 import Info from '../components/info'
+import GoogleMap from '../components/map'
 
 
 const ContactPage = () => {
@@ -15,7 +16,7 @@ const ContactPage = () => {
           <Info />
           <Hours />
         </div>
-        {/* Google Mapa */}
+        <GoogleMap googleMapsApiKey="AIzaSyD1KgGg10zoFsnqdhD4hbd6emecf-L680Q" />
       </Box>
     </Layout>
   )

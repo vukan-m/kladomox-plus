@@ -2,13 +2,12 @@ import * as React from 'react'
 import '../css/main.css'
 
 
-const Card = ({boxNumber}) => {
+const Card = ({boxNumber, children}) => {
     return (
         <div className={boxNumber}>
             <div className="box-overlay">
                 <div>
-                    <h3>Udobnost</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    {children}
                 </div>
             </div>
         </div>

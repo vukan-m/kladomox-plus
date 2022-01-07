@@ -23,7 +23,7 @@
     padding-left: 0;
     justify-content: end;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: .5rem 2rem;
+    /* padding: .5rem 2rem; */
     background-color: #FFB16D;
     height: 6ch;
     border-radius: 1rem;
@@ -35,7 +35,7 @@
     left: -3rem;
     top: -2.4rem;
     background-color: #FDE6D8;
-    z-index: 100;
+    z-index: 5;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     margin: 0;
@@ -142,6 +142,7 @@ p {
     width: 450px;
     height: 420px;
     margin-left: 3rem;
+    overflow: visible !important;
 }
 
 .main p {
@@ -216,7 +217,6 @@ p {
 }
 
 .footer img {
-    width: 600px;
     height: 390px;
 }
 
@@ -268,3 +268,75 @@ span {
 .emphasis {
     font-style: italic;
 }
+
+.center {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.center img {
+    width: 40vw;
+    border-radius: 1rem;
+}
+
+.google-map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.map {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+}
+
+.gg-pin {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 18px;
+    height: 18px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid #e65100;
+    margin-top: -4px
+}
+.gg-pin::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #e65100;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px
+}
+
+ul.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+    list-style: none;
+    margin: 4rem;
+    padding: 0;
+  }
+  
+  ul.images > li {
+    position: relative;
+    padding-top: 66%;
+  }
+  
+  ul.images > li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
