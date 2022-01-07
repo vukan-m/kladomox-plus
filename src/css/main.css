@@ -131,6 +131,7 @@ p {
     display: flex;
     padding: 4rem 8rem;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .main div {
@@ -232,6 +233,12 @@ p {
     width: 260px;
 }
 
+.button {
+    background-color: #420C14;
+    border-radius: 0.5rem;
+    color: #FDE6D8;
+}
+
 .contact {
     display: flex;
     width: 50%;
@@ -255,6 +262,7 @@ p {
     max-width: 70%;
     margin: 0 auto;
     padding-bottom: 1rem;
+    text-align: justify;
 }
 
 .about:last-of-type {
