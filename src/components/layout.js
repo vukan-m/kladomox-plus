@@ -1,6 +1,7 @@
 import * as React from 'react'
 import '../css/main.css'
 import NavBar from './nav-bar'
+import MobileNavBar from './mobile-nav-bar'
 
 const Layout = ({ pageTitle, children }) => {
     return (

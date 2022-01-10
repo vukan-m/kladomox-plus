@@ -11,12 +11,14 @@ const ContactPage = () => {
   return (
     <Layout pageTitle="Kontakt">
       <Box bgColor="lightBg">
-        <h2 className="padding">Kontakt</h2>
-        <div class="contact">
-          <Info />
-          <Hours />
+        <div className="contact-page">
+          <h2 className="padding">Kontakt</h2>
+          <div class="contact">
+            <Info />
+            <Hours />
+          </div>
+          <GoogleMap googleMapsApiKey="AIzaSyD1KgGg10zoFsnqdhD4hbd6emecf-L680Q" />
         </div>
-        <GoogleMap googleMapsApiKey="AIzaSyD1KgGg10zoFsnqdhD4hbd6emecf-L680Q" />
       </Box>
     </Layout>
   )
