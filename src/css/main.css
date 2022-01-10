@@ -511,12 +511,24 @@ ul.images {
     padding: 1rem;
     min-width: 50vw;
   }
+
+  .dropbtn-true {
+    background-color: #dd995e;
+    border: none;
+    font-size: 1rem;
+    color: #420C14;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: 600;
+    padding: 1rem;
+    min-width: 50vw;
+  }
   
   .dropdown {
     position: relative;
     display: none;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -524,11 +536,27 @@ ul.images {
     min-width: 50vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 4;
-    right: 0;
+    right: -14rem;
     text-align: center;
   }
 
-  .dropdown-content a {
+  @keyframes move {
+      from {right: -14rem;}
+      to {right: 0;}
+  }
+
+  .dropdown-content-true {
+    display: block;
+    position: absolute;
+    background-color: #dd995e;
+    min-width: 50vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    text-align: center;
+    animation: move .2s;
+  }
+
+  .dropdown-content-true a {
     color: #420C14;
     text-decoration: none;
     font-variant: small-caps;
