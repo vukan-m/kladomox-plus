@@ -35,19 +35,21 @@ const GalleryPage = () => {
   return (
     <Layout pageTitle="Galerija">
       <Box bgColor="lightBg">
-        <h2 className="padding">Galerija</h2>
-        <ImageGroup>
-          <ul className="images">
-            {images.map(i => (
-              <li key={i}>
-                <Image
-                  src={i}
-                  alt="Gallery picture"
-                />
-              </li>
-            ))}
-          </ul>
-        </ImageGroup>
+        <div className="gallery-page">
+          <h2 className="padding">Galerija</h2>
+          <ImageGroup>
+            <ul className="images">
+              {images.map(i => (
+                <li key={i}>
+                  <Image
+                    src={i}
+                    alt="Gallery picture"
+                  />
+                </li>
+              ))}
+            </ul>
+          </ImageGroup>
+        </div>
       </Box>
     </Layout>
   )

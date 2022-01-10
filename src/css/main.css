@@ -52,6 +52,11 @@
     font-weight: 600;
 }
 
+.nav-link-text img {
+    width: 120px;
+    height: 130px;
+}
+
 .border {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
@@ -371,7 +376,7 @@ ul.images {
     }
 }
 
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
       body {
           width: 100%;
       }
@@ -464,6 +469,10 @@ ul.images {
       }
 
       .about-page .padding {
+          padding: 2rem 0;
+      }
+
+      .gallery-page .padding {
           padding: 2rem 0;
       }
 

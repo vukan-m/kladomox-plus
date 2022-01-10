@@ -10,7 +10,7 @@ const NavBar = () => {
         <nav>
             <ul className="nav-links">
                 <NavLink link="/">
-                    <img src={logo} alt="Site logo" height="120px" width="130px" />
+                    <img src={logo} alt="Site logo" />
                 </NavLink>
                 <MobileNavBar />
                 <NavLink link="/about">
