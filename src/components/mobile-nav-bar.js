@@ -12,7 +12,7 @@ const MobileNavBar = () => {
 
     return (
         <div class="dropdown">
-            <button onClick={toggleContent} className={content ? "dropbtn-true" : "dropbtn"}>Dropdown</button>
+            <button onClick={toggleContent} className={content ? "menu-exit" : "menu"}></button>
             <div className={content ? "dropdown-content-true" : "dropdown-content"}>
                 <Link to="/">Početna</Link>
                 <Link to="/about">O Nama</Link>

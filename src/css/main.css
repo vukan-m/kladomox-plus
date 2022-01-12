@@ -509,30 +509,6 @@ ul.images {
 
 
   /* Dropdown Menu */
-  .dropbtn {
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    color: #420C14;
-    text-decoration: none;
-    font-variant: small-caps;
-    font-weight: 600;
-    padding: 1rem;
-    min-width: 50vw;
-  }
-
-  .dropbtn-true {
-    background-color: #dd995e;
-    border: none;
-    font-size: 1rem;
-    color: #420C14;
-    text-decoration: none;
-    font-variant: small-caps;
-    font-weight: 600;
-    padding: 1rem;
-    min-width: 50vw;
-  }
-  
   .dropdown {
     position: relative;
     display: none;
@@ -572,6 +548,26 @@ ul.images {
     font-weight: 600;
     padding: 12px 16px;
     display: block;
+  }
+
+  .menu {
+    background: url("../images/menu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border: .5rem solid transparent;
+    min-width: 50vw;
+    height: 100%;
+  }
+
+  .menu-exit {
+    background: url("../images/menu-exit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border: .5rem solid transparent;
+    min-width: 50vw;
+    height: 100%;
   }
   
   /* .dropdown:hover .dropdown-content {
