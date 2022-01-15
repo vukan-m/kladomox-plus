@@ -1,16 +1,15 @@
 import * as React from 'react'
 import '../css/main.css'
 import NavLink from '../components/link'
-import logo from '../images/logo.png'
 import MobileNavBar from '../components/mobile-nav-bar'
 
 
-const NavBar = () => {
+const NavBar = ({pageName}) => {
     return (
         <nav>
-            <ul className="nav-links">
+            <ul className={pageName}>
                 <NavLink link="/">
-                    <img src={logo} alt="Site logo" />
+                    Početna
                 </NavLink>
                 <MobileNavBar />
                 <NavLink link="/about">

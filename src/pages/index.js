@@ -9,7 +9,7 @@ import {StaticImage} from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Početna strana">
+    <Layout pageTitle="Početna strana" navName="nav-links-home">
       <div className="banner">
         <div className="image">
         </div>
