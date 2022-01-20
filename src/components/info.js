@@ -6,8 +6,8 @@ const Info = () => {
         <div>
             <h4>Naziv:</h4>
             <p>Kladomox Plus Dom za Stare</p>
-            <h4>Pib:</h4>
-            <p>107712899</p>
+            {/* <h4>Pib:</h4>
+            <p>107712899</p> */}
             <h4>Adresa:</h4>
             <p>Edvarda Kardelja 200, Kelebija</p>
             <h4>Telefoni:</h4>

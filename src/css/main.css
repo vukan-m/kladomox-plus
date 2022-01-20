@@ -1,8 +1,8 @@
 :root {
     --prim: #F6AE99;
-    --sec: #B97A95;
-    --text: #716F81;
-    --bg: #F2E1C1;
+    --sec: #A86E87;
+    --text: #646273;
+    --bg: #f2e0c0;
     --dark-bg: #F9D5A7;
 }
 
@@ -40,7 +40,7 @@
     list-style: none;
     padding-left: 0;
     justify-content: end;
-    background-color: var(--bg);
+    background-color: rgba(242, 225, 193, 0.4);
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -319,7 +319,7 @@ span {
 .google-map {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4.7rem;
 }
 
 .map {
@@ -336,7 +336,7 @@ span {
     width: 18px;
     height: 18px;
     border-radius: 100% 100% 0 100%;
-    border: 2px solid #e65100;
+    border: 2px solid var(--sec);
     margin-top: -4px
 }
 .gg-pin::before {
@@ -346,7 +346,7 @@ span {
     position: absolute;
     width: 8px;
     height: 8px;
-    border: 2px solid #e65100;
+    border: 2px solid var(--sec);
     top: 3px;
     left: 3px;
     border-radius: 40px
