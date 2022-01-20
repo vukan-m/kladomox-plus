@@ -34,7 +34,7 @@ const images = [
 const GalleryPage = () => {
   return (
     <Layout pageTitle="Galerija" navName="nav-links">
-      <Box bgColor="lightBg">
+      <Box>
         <div className="gallery-page">
           <h2 className="padding">Galerija</h2>
           <ImageGroup>

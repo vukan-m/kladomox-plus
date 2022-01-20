@@ -14,7 +14,7 @@ const IndexPage = () => {
         <div className="image">
         </div>
       </div>
-      <Box bgColor="lightBg">
+      <Box>
         <div className="main">
           <div>
             <h2 className="no-padding">Kladomox Plus</h2>
@@ -46,7 +46,7 @@ const IndexPage = () => {
           </div>
         </div>
       </Box>
-      <Box bgColor="lightBg">
+      <Box>
         <div className="footer">
           <Form />
           <div>

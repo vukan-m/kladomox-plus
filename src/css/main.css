@@ -1,7 +1,7 @@
 :root {
-    --prim: #F6AE99;
-    --sec: #A86E87;
-    --text: #646273;
+    --prim: #c54644;
+    --sec: #c2554f;
+    --text: #504538;
     --bg: #f2e0c0;
     --dark-bg: #F9D5A7;
 }
@@ -12,11 +12,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ff9f62;
+}
+
 .container {
     font-family: sans-serif;
-    margin: 0 auto;
+    margin: 3rem auto;
     width: 90%;
     background-color: var(--bg);
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
@@ -25,23 +31,9 @@
     list-style: none;
     padding-left: 0;
     justify-content: end;
-    background-color: var(--bg);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.nav-links-home {
-    position: absolute;
-    top: 0;
-    right: 5%;
-    width: 90%;
-    margin: 0 auto;
-    z-index: 10;
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    justify-content: end;
-    background-color: rgba(242, 225, 193, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--dark-bg);
+    border-radius: 2rem 2rem 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-link-item:nth-child(2) {
@@ -67,16 +59,15 @@
 }
 
 .border {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.border:last-child {
+    border-bottom: 0;
 }
 
 .darkBg {
     background-color: var(--dark-bg);
-}
-
-.lightBg {
-    /* background-color: #FEF1E6; */
 }
 
 .padding {
@@ -247,15 +238,11 @@ p {
     background-color: var(--prim);
     border-radius: 0.5rem;
     padding-block: 0.2rem;
-    color: #333;
+    color: #edccca;
 }
 
 .button:hover {
     cursor: pointer;
-}
-
-.contact-page {
-    /* height: 100vh; */
 }
 
 .contact {
@@ -319,7 +306,7 @@ span {
 .google-map {
     display: flex;
     justify-content: center;
-    margin-bottom: 4.7rem;
+    margin-bottom: 2rem;
 }
 
 .map {
@@ -570,11 +557,3 @@ ul.images {
     min-width: 50vw;
     height: 100%;
   }
-  
-  /* .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #dd995e;
-  } */

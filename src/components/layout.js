@@ -2,11 +2,11 @@ import * as React from 'react'
 import '../css/main.css'
 import NavBar from './nav-bar'
 
-const Layout = ({ pageTitle, navName, children }) => {
+const Layout = ({ pageTitle, children }) => {
     return (
         <div className="container">
             <title>{pageTitle} | Kladomox Plus</title>
-            <NavBar pageName={navName} />
+            <NavBar />
             <main>
                 {children}
             </main>

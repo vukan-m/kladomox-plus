@@ -10,7 +10,7 @@ import GoogleMap from '../components/map'
 const ContactPage = () => {
   return (
     <Layout pageTitle="Kontakt" navName="nav-links">
-      <Box bgColor="lightBg">
+      <Box>
         <div className="contact-page">
           <h2 className="padding">Kontakt</h2>
           <div class="contact">

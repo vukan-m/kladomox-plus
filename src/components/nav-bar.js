@@ -4,10 +4,10 @@ import NavLink from '../components/link'
 import MobileNavBar from '../components/mobile-nav-bar'
 
 
-const NavBar = ({pageName}) => {
+const NavBar = () => {
     return (
         <nav>
-            <ul className={pageName}>
+            <ul className="nav-links">
                 <NavLink link="/">
                     Početna
                 </NavLink>

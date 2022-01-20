@@ -8,7 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const AboutPage = () => {
   return (
     <Layout pageTitle="O Nama" navName="nav-links">
-      <Box bgColor="lightBg">
+      <Box>
         <div className="about-page">
           <h2 className="padding">O Nama</h2>
           <div className="mobile">
