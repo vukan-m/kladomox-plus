@@ -3,7 +3,7 @@ import '../css/main.css'
 
 const Box = ({bgColor, children}) => {
     return (
-        <div className={`border ${bgColor}`}>
+        <div className={bgColor}>
             <main>
                 {children}
             </main>

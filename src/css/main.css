@@ -1,9 +1,8 @@
 :root {
-    --prim: #c54644;
-    --sec: #c2554f;
-    --text: #504538;
-    --bg: #f2e0c0;
-    --dark-bg: #F9D5A7;
+    --prim: #f4792b;
+    --text: #8F5D41;
+    --bg: #fff1e5;
+    --dark-bg: #fff;
 }
 
 * {
@@ -12,17 +11,12 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ff9f62;
-}
 
 .container {
     font-family: sans-serif;
     margin: 3rem auto;
-    width: 90%;
+    width: 85%;
     background-color: var(--bg);
-    border-radius: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
@@ -31,9 +25,8 @@ body {
     list-style: none;
     padding-left: 0;
     justify-content: end;
-    background-color: var(--dark-bg);
-    border-radius: 2rem 2rem 0 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--bg);
+    border-bottom: 1px solid #8F5D4120;
 }
 
 .nav-link-item:nth-child(2) {
@@ -47,7 +40,7 @@ body {
 }
 
 .nav-link-text {
-    color: var(--sec);
+    color: var(--prim);
     text-decoration: none;
     font-variant: small-caps;
     font-weight: 600;
@@ -56,14 +49,6 @@ body {
 .nav-link-text img {
     width: 120px;
     height: 130px;
-}
-
-.border {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.border:last-child {
-    border-bottom: 0;
 }
 
 .darkBg {
@@ -79,7 +64,7 @@ body {
 }
 
 h2 {
-    color: var(--sec);
+    color: var(--prim);
     text-align: center;
     font-weight: 800;
     font-size: 1.8rem;
@@ -208,23 +193,28 @@ p {
 }
 
 .footer {
-    height: 45vh;
     display: flex;
+    background: url(../images/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer h2 {
     margin: 2rem 0;
 }
 
-.footer img {
-    height: 100%;
-    width: 130%;
-    margin-left: -4rem;
+.footer > div {
+    background: #FFF1E570;
+    margin: 4rem auto;
 }
 
-.footer div {
-    width: 49%;
-    text-align: center;
+.footer form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 30vw;
 }
 
 .footer input,
@@ -232,13 +222,18 @@ p {
     display: block;
     margin: 0.8rem auto;
     width: 260px;
+    border: none;
+    color: #8f5d41;
 }
 
-.button {
+.footer .button {
     background-color: var(--prim);
-    border-radius: 0.5rem;
-    padding-block: 0.2rem;
+    padding-block: 0.3rem;
     color: #edccca;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 150px;
+    flex-basis: 25%;
 }
 
 .button:hover {
@@ -254,7 +249,7 @@ p {
 }
 
 .contact h4 {
-    color: var(--sec);
+    color: var(--prim);
     font-variant: small-caps;
     padding-bottom: 0.5rem;
     font-size: 1.3rem;
@@ -323,7 +318,7 @@ span {
     width: 18px;
     height: 18px;
     border-radius: 100% 100% 0 100%;
-    border: 2px solid var(--sec);
+    border: 2px solid var(--prim);
     margin-top: -4px
 }
 .gg-pin::before {
@@ -333,7 +328,7 @@ span {
     position: absolute;
     width: 8px;
     height: 8px;
-    border: 2px solid var(--sec);
+    border: 2px solid var(--prim);
     top: 3px;
     left: 3px;
     border-radius: 40px
@@ -362,7 +357,6 @@ ul.images {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
   }
 
   /* Image Plugin Css */

@@ -49,9 +49,6 @@ const IndexPage = () => {
       <Box>
         <div className="footer">
           <Form />
-          <div>
-            <StaticImage src="../images/footer.jpg" alt="Footer" />
-          </div>
         </div>
       </Box>
     </Layout>
