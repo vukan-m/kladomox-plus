@@ -5,6 +5,10 @@ import Card from '../components/card'
 import Form from '../components/form'
 import '../css/main.css'
 import {StaticImage} from 'gatsby-plugin-image'
+import Nature from '../images/nature.jpg'
+import Peace from '../images/peace.jpg'
+import Comfort from '../images/comfort.jpg'
+
 
 
 const IndexPage = () => {
@@ -31,15 +35,15 @@ const IndexPage = () => {
         <div className="box">
           <h2 className="big padding">Pružamo Vam</h2>
           <div className="boxes">
-            <Card boxNumber="first-box">
+            <Card imageSrc={Comfort}>
               <h3>Udobnost</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
             </Card>
-            <Card boxNumber="second-box">
+            <Card imageSrc={Peace}>
               <h3>Mir i tišinu</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
             </Card>
-            <Card boxNumber="third-box">
+            <Card imageSrc={Nature}>
               <h3>Prirodu</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
             </Card>

@@ -2,14 +2,15 @@ import * as React from 'react'
 import '../css/main.css'
 
 
-const Card = ({boxNumber, children}) => {
+const Card = ({ imageSrc, children }) => {
     return (
-        <div className={boxNumber}>
-            <div className="box-overlay">
-                <div>
+        <div>
+            <figure>
+                <img src={imageSrc} alt="Card Image" />
+                <figcaption>
                     {children}
-                </div>
-            </div>
+                </figcaption>
+            </figure>
         </div>
     )
 }

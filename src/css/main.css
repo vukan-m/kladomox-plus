@@ -76,8 +76,7 @@ h2 {
 }
 
 h3 {
-    text-align: center;
-    color: white;
+    color: var(--prim);
 }
 
 p {
@@ -137,7 +136,7 @@ p {
 }
 
 .box {
-    height: 60vh;
+    height: 65vh;
 }
 
 .box .boxes {
@@ -147,49 +146,20 @@ p {
     gap: 12vw;
 }
 
-.box-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 1));
-    height: 100%;
+figure {
+    width: 15vw;
+    background-color: var(--bg);
+    padding: 0.5rem;
 }
 
-.box-overlay div {
-    padding-top: 12rem;
+figure img {
+    width: 100%;
+    aspect-ratio: 1;
 }
 
-.box-overlay p {
-    margin-top: 1rem;
-    color: white;
+figcaption {
+    padding: 0.5rem;
     text-align: center;
-}
-
-.first-box {
-    overflow: hidden;
-    width: 13vw;
-    height: 35vh;
-    background: url("../images/comfort.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.second-box {
-    overflow: hidden;
-    width: 13vw;
-    height: 35vh;
-    background: url("../images/peace.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.third-box {
-    overflow: hidden;
-    width: 13vw;
-    height: 35vh;
-    background: url("../images/nature.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .footer {
