@@ -8,7 +8,6 @@ import {StaticImage} from 'gatsby-plugin-image'
 import Nature from '../images/nature.jpg'
 import Peace from '../images/peace.jpg'
 import Comfort from '../images/comfort.jpg'
-import BWhite from '../images/black-white.jpg'
 
 
 
@@ -28,7 +27,7 @@ const IndexPage = () => {
             <p>U domu <span>Kladomox Plus</span> sve je osmišljeno u cilju pružanja visoko kvalitetnih usluga kako bi se naši korisnici osećali sigurno, komforno i zbrinjeno, počev od nege, higijene i ishrane pa do medicinskih usluga, terapije i društvenog života. Za rekreaciju i organizovane izlete korisnici doma mogu da koriste usluge vožnje u fijaker po prelepoj prirodi i Kelebijskoj šumi koja se nalazi u neposrednoj blizini doma.</p>
           </div>
           <div>
-            <StaticImage src={BWhite} alt="Black and White" />
+            <StaticImage src='../images/black-white.jpg' alt="Black and White" />
           </div>
         </div>
       </Box>
