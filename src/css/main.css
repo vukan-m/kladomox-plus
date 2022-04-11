@@ -29,6 +29,18 @@
     border-bottom: 1px solid #8F5D4120;
 }
 
+.nav-link-item:first-child {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 100;
+    left: -30px;
+    top: -40px;
+    background-color: var(--bg);
+    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+}
+
 .nav-link-item:nth-child(2) {
     display: none;
 }
@@ -46,10 +58,10 @@
     font-weight: 600;
 }
 
-.nav-link-text img {
+/* .nav-link-text img {
     width: 120px;
     height: 130px;
-}
+} */
 
 .darkBg {
     background-color: var(--dark-bg);
@@ -89,7 +101,7 @@ p {
 
 .banner .image {
     height: 100%;
-    background: url("../images/banner.jpg");
+    background: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

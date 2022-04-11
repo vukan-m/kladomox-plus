@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "gatsby": "^4.4.0",
     "gatsby-plugin-image": "^2.4.0",
     "gatsby-plugin-sharp": "^4.4.0",

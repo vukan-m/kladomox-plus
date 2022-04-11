@@ -2,6 +2,7 @@ import * as React from 'react'
 import '../css/main.css'
 import NavLink from '../components/link'
 import MobileNavBar from '../components/mobile-nav-bar'
+import logo from '../images/logo.png'
 
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
         <nav>
             <ul className="nav-links">
                 <NavLink link="/">
-                    Početna
+                    <img src={logo} alt="Site logo" height="120px" width="130px" />
                 </NavLink>
                 <MobileNavBar />
                 <NavLink link="/about">
