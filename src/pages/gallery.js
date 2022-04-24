@@ -18,9 +18,9 @@ const GalleryPage = () => {
           <ImageGroup>
             <ul className="images">
               {fetchData.map(i => (
-                <li key={i?.id}>
+                <li key={i?.name}>
                   <Image
-                    src={"http://localhost:1337" + i?.formats?.large?.url}
+                    src={"http://localhost:1337" + i?.formats?.medium?.url}
                     alt={i?.alternativeText}
                   />
                 </li>
@@ -33,4 +33,4 @@ const GalleryPage = () => {
   )
 }
 
-export default GalleryPage
+export default GalleryPage;

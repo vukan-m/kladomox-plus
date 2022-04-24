@@ -11,7 +11,7 @@ const MobileNavBar = () => {
     }
 
     return (
-        <div class="dropdown">
+        <div className="dropdown">
             <button onClick={toggleContent} className={content ? "menu-exit" : "menu"}></button>
             <div className={content ? "dropdown-content-true" : "dropdown-content"}>
                 <Link to="/">Početna</Link>
@@ -23,4 +23,4 @@ const MobileNavBar = () => {
     )
 }
 
-export default MobileNavBar
+export default MobileNavBar;

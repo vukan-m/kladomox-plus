@@ -12,4 +12,4 @@ const NavLink = ({ link, children }) => {
     )
 }
 
-export default NavLink
+export default NavLink;

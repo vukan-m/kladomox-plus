@@ -11,4 +11,4 @@ const Box = ({bgColor, children}) => {
     )
 }
 
-export default Box
+export default Box;

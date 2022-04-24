@@ -31,7 +31,7 @@ const Form = () => {
                 <div className="form-div">
                     <textarea name="message" id="message" cols="30" rows="5" placeholder="Poruka"></textarea>
                 </div>
-                <input class="button" type="submit" value="Pošalji" />
+                <input className="button" type="submit" value="Pošalji" />
             </form>
         </div>
     )

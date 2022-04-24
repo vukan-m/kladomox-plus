@@ -15,6 +15,6 @@ const Card = ({ imageSrc, children }) => {
     )
 }
 
-export default Card
+export default Card;
 
 // Ubaciti query graphql mdx
