@@ -13,7 +13,7 @@ const ContactPage = () => {
       <Box>
         <div className="contact-page">
           <h2 className="padding">Kontakt</h2>
-          <div class="contact">
+          <div className="contact">
             <Info />
             <Hours />
           </div>
