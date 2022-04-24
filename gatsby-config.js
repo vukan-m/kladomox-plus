@@ -10,10 +10,19 @@ module.exports = {
       option: {
         defaults: {},
         failOnError: true,
-        icon: "src/images/favicon.png",
       },
     },
     "gatsby-transformer-sharp",
     "react-fullscreen-image",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/favicon.png",
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        display: `standalone`,
+      },
+    },
   ],
 };

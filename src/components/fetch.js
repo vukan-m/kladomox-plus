@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react'
 
 const useFetch = (url) => {
+    const [data, setData] = useState();
 
-    const randomArray = [1, 2, 3];
-
-    const [data, setData] = useState(randomArray);
     useEffect(() => {
         fetch(url)
         .then((res) => res.json())
         .then((data) => setData(data))
         .catch((err) => console.log(err));
     }, [url]);
+    
     return data;
 };
 
