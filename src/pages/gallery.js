@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import Box from '../components/box'
 import { ImageGroup, Image } from 'react-fullscreen-image'
@@ -6,9 +6,9 @@ import useFetch from '../components/fetch'
 import '../css/main.css'
 import Loading from '../components/loading'
 
+// map, filter, reduce , find, every , some
 
 const GalleryPage = () => {
-
   const fetchData = useFetch("http://localhost:1337/api/upload/files/");
 
   return (
