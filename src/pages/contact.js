@@ -9,7 +9,7 @@ import GoogleMap from '../components/map'
 
 const ContactPage = () => {
   return (
-    <Layout pageTitle="Kontakt" navName="nav-links">
+    <Layout pageTitle="Kontakt">
       <Box>
         <div className="contact-page">
           <h2 className="padding">Kontakt</h2>

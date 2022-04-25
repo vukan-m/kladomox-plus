@@ -13,7 +13,7 @@ import Comfort from '../images/comfort.jpg'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Početna strana" navName="nav-links-home">
+    <Layout pageTitle="Početna strana">
       <div className="banner">
         <div className="image">
         </div>
@@ -33,7 +33,7 @@ const IndexPage = () => {
       </Box>
       <Box bgColor="darkBg">
         <div className="box">
-          <h2 className="big padding">Pružamo Vam</h2>
+          <h2 className="padding">Pružamo Vam</h2>
           <div className="boxes">
             <Card imageSrc={Comfort}>
               <h3>Udobnost</h3>

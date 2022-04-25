@@ -1,6 +1,5 @@
 import * as React from 'react'
 
-
 const Info = () => {
     return (
         <div>
